@@ -36,3 +36,19 @@ print(m)
 a = (m-m.mean(axis=0))/m.std(axis = 0)
 print(a.mean(axis = 0))
 print(a.std(axis = 0))
+#5
+marks = np.array([38, 72, 45, 19, 88, 40, 61, 29, 95, 55])
+a=(np.where(marks >= 40, 1 , 0))
+print(a, np.sum(a))
+print((np.sum(a)/marks.size) * 100)
+#6
+scores = np.array([[78, 85, 62],
+                   [90, 71, 88],
+                   [55, 64, 70],
+                   [82, 93, 79]])
+print(scores.sum(axis = 1))
+print(scores.mean(axis = 0))
+abc = scores.sum(axis = 1)
+abx = scores.mean(axis = 0)
+print(np.argmax(abc))
+print(np.argmin(abx))
