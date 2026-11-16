@@ -8,3 +8,9 @@ print(l1)
 arr = np.array([10,20,30,40,50])
 arr = arr+5
 print(arr)
+#Q1
+arr1 = np.arange(12)
+arr1 = arr1.reshape(3,4)
+arr1 = arr1 - arr1.mean(axis = 0)
+arr1 = arr1/arr1.std(axis =0)
+arr1 = arr1.mean(axis = 0)
