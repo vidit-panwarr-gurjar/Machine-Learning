@@ -52,3 +52,14 @@ abc = scores.sum(axis = 1)
 abx = scores.mean(axis = 0)
 print(np.argmax(abc))
 print(np.argmin(abx))
+#7
+rng = np.random.default_rng(1)
+d = rng.normal(50,10,(8,3))
+print(d)
+#---------------Pandas-----------------
+import pandas as pd
+series = pd.Series([10,20,30,40],index = ["cheetah","sher","yes","o"])
+print(series)
+yes = {10:10,20:20,30:30,40:40}
+df = pd.DataFrame(yes,index=[0])
+print(df)
