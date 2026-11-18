@@ -14,5 +14,9 @@ print(df.shape)
 print(df.dtypes)
 df1 = pd.read_csv("students.csv")
 print(df1.head())
-print(df1.info)
-print(df1.describe)
+print(df1.info())
+print(df1.describe())
+print(df1[["hours_studied","attendance"]])
+print(df1["prev_marks"].unique())
+
+
