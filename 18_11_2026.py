@@ -24,5 +24,26 @@ print(df.info())
 #q5
 print(df.describe())
 #q6
-
-
+print(df["prev_marks"])
+print(type(df["prev_marks"]).__name__)
+print(type(df[["prev_marks"]]).__name__)
+print(df[["hours_studied","prev_marks"]].head(3))
+#7
+marks = pd.DataFrame(
+    {
+        "name":["Aarav","Priya","Rohit","Sneha"],
+        "Maths":[88,74,91,66]
+    },index = [2,0,3,1]
+)
+print(marks.loc[0])
+print(marks.iloc[0])
+print(marks.loc[2,"name"])
+print(marks.iloc[2,0])
+l1 = [10,90,80,45,76,100]
+l2 = []
+for i in l1:
+    if i > 75:
+        l2.append(i)
+print(l2)
+m = df["hours_studied"]>8
+print((df["hours_studied"]>8).sum())
