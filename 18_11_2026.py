@@ -46,4 +46,4 @@ for i in l1:
         l2.append(i)
 print(l2)
 m = df["hours_studied"]>8
-print((df["hours_studied"]>8).sum())
+print(np.sum((df["hours_studied"]>8)))
